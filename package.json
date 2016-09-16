@@ -7,6 +7,11 @@
     "test": "grunt"
   },
   "author": "Andrew Challen",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/areve/karma-and-protractor-reporter"
+  },
+  "url": "https://github.com/areve/karma-and-protractor-reporter",
   "license": "ISC",
   "devDependencies": {
     "grunt": "^1.0.1",
@@ -18,5 +23,8 @@
     "karma-jasmine": "^1.0.2",
     "karma-phantomjs-launcher": "^1.0.2",
     "phantomjs": "^2.1.7"
+  },
+  "dependencies": {
+    "colors": "^1.1.2"
   }
 }
