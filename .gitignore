@@ -1,0 +1,14 @@
+/bower_components/
+/node_modules/
+/coverage-report/
+/www/lib/
+/www/
+/.tscache/
+/src/piano/play/*.map
+.baseDir.ts
+.baseDir.js
+/.vs/
+/.gitattributes
+*.user
+tscommand*.tmp.txt
+/phantomjsdriver.log

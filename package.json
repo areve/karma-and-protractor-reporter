@@ -1,0 +1,22 @@
+{
+  "name": "karma-and-protractor-reporter",
+  "version": "1.0.0",
+  "description": "A command line reporter for protractor and karma for Test Driven Development. The output is compact and has stacktrace highlighting so it's easy to see which tests are failing as quickly as possible.",
+  "main": "src/karma-and-protractor-reporter.js",
+  "scripts": {
+    "test": "grunt"
+  },
+  "author": "Andrew Challen",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-eslint": "^19.0.0",
+    "grunt-jasmine-nodejs": "^1.5.4",
+    "jasmine": "^2.5.1",
+    "karma-jasmine": "^1.0.2",
+    "karma-phantomjs-launcher": "^1.0.2",
+    "phantomjs": "^2.1.7"
+  }
+}
