@@ -12,3 +12,4 @@
 *.user
 tscommand*.tmp.txt
 /phantomjsdriver.log
+/npm-debug.log
