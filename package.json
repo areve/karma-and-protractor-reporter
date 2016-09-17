@@ -1,6 +1,6 @@
 {
   "name": "karma-and-protractor-reporter",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A command line reporter for protractor and karma for Test Driven Development. The output is compact and has stacktrace highlighting so it's easy to see which tests are failing as quickly as possible.",
   "main": "src/karma-and-protractor-reporter.js",
   "scripts": {

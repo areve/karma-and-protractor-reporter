@@ -42,7 +42,7 @@ To install use `npm install karma-and-protractor-reporter --save-dev`.
         print: function() {}
       },
       onPrepare: function() {
-        var KapReporter = require('karma-and-protractor-reporter');
+        var KapReporter = require('karma-and-protractor-reporter').KapReporter;
         jasmine.getEnv().addReporter(new KapReporter({
           useColors: true,
           showTiming: true,
