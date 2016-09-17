@@ -1,8 +1,8 @@
 (function() {
     'use strict';
-    var KarmaKapReporter = require('./kap-reporter').karma;
-    module.exports = {
-      'reporter:kap': ['type', KarmaKapReporter],
-      'protractor': require('./kap-reporter')
-    };
+
+    var KapReporter = require('./kap-reporter');
+    KapReporter['reporter:kap'] = ['type', KapReporter.karma];
+    KapReporter['protractor'] = KapReporter;
+    module.exports = KapReporter;
 })();
