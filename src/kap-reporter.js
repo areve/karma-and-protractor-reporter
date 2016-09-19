@@ -39,9 +39,14 @@ function KarmaKapReporter(baseReporterDecorator, formatError, config) {
 
 			var highlight = true;
 			if (regexLoaded.test(line)) highlight = false;
+			if (/node_modules/.test(line)) highlight = false;
+
 			if (this.stackStyle === 'highlight') {
 				if (highlight) {
-					var result = this.highlightRegex(line, [regexHostStart, regexNoCache]);
+					var result = this.highlightRegex(line, [
+						regexHostStart,
+						regexHost,
+						regexNoCache]);
 					return result;
 				} else {
 					return line.stack;
@@ -50,6 +55,7 @@ function KarmaKapReporter(baseReporterDecorator, formatError, config) {
 				if (highlight) {
 					var cleanLine = line
 						.replace(regexHostStart, this.indent + 'at ')
+						.replace(regexHost, '')
 						.replace(regexNoCache, '');
 					return cleanLine.stackHighlight;
 				} else {
